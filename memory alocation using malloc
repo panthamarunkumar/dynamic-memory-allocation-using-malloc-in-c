@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+struct emp 
+{
+    int id;
+    char name[20];
+    float ic;
+};
+void main()
+{
+struct emp* ptr;
+ptr=(struct emp*)malloc(sizeof(struct emp));
+if(ptr==NULL)
+{
+    printf("eror");
+}
+else
+{
+    printf(" enter the studt data");
+    scanf("%d %s %f",&ptr->id,ptr->name,&ptr->ic);
+    printf("%d %s %f",ptr->id,ptr->name,ptr->ic);
+}
+
+}
